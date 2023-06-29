@@ -1,0 +1,21 @@
+.card__title-hobbies {
+  font-size: clamp(1.5rem, 5vw, 1.7rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.card__image--hobbieSplide {
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+}
+
+.hobbie__title {
+  font-size: clamp(1.2rem, 5vw, 1.4rem);
+  font-weight: 600;
+}
+
+.hobbie__text {
+  font-size: clamp(1rem, 5vw, 1.3rem);
+  font-weight: 300;
+}

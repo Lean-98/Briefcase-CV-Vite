@@ -1,0 +1,43 @@
+.card--experience {
+  margin-bottom: 0.7rem;
+}
+
+.card__title-experience {
+  font-size: clamp(1.4rem, 5vw, 1.6rem);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.experience {
+  display: flex;
+  align-items: start;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 2px solid var(--primary-color);
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+
+.experience__image {
+  max-width: 20%;
+  margin-right: 1rem;
+}
+
+.experience__time {
+  font-size: clamp(0.9rem, 5vw, 1rem);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.experience__job {
+  margin: 0;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+  transition: var(--transition);
+}
+
+.experience__description {
+  font-size: clamp(0.9rem, 5vw, 1.1rem);
+  font-weight: 300;
+  margin-bottom: 1.5em;
+}

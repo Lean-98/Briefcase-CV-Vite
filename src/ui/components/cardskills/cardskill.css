@@ -1,0 +1,125 @@
+.card-skill {
+    padding: 1rem;
+    background-color: var(--bg--card-color);
+    border-radius: var(--border-radius);
+    min-width: 240px;
+}
+
+.card__title-skill {
+    display: flex;
+    justify-content: flex-start; 
+    font-size: clamp(1.5rem, 5vw, 1.7rem);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.card-skill small {
+    font-size: clamp(1rem, 5vw, 1.4rem);
+    font-weight: 400; 
+}
+
+.skills {
+    padding: 1rem 0;
+}
+
+.skills__header {
+    display: flex;
+    justify-content: space-between;
+    width: 175px;
+    font-size: 1.1rem;
+    margin-left: auto;
+}
+
+.skills__tech {
+    font-size: clamp(0.8rem, 5vw, 1.2rem);
+    font-weight: 300; 
+    margin: 0;
+}
+
+.skills__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.skills__bar,
+.skills__bar::after {
+    position: relative;
+    width: 175px;
+    height: 8px;
+    background-color: #8888;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.skills__bar::after {
+    content: "";
+    position: absolute;
+    left: -175px;
+    background-color: var(--primary-color);
+    transition: var(--transition);
+    animation: skills-bar-fill 2s ease-in-out forwards;
+}
+
+.skills__bar--10::after {
+    --skill-bar-lenght: 10%;
+}
+
+.skills__bar--20::after {
+    --skill-bar-lenght: 20%;
+}
+
+.skills__bar--30::after {
+    --skill-bar-lenght: 30%;
+}
+
+.skills__bar--40::after {
+    --skill-bar-lenght: 40%;
+}
+
+.skills__bar--50::after {
+    --skill-bar-lenght: 50%;
+}
+
+.skills__bar--60::after {
+    --skill-bar-lenght: 60%;
+}
+
+.skills__bar--70::after {
+    --skill-bar-lenght: 70%;
+}
+
+.skills__bar--80::after {
+    --skill-bar-lenght: 80%;
+}
+
+.skills__bar--90::after {
+    --skill-bar-lenght: 90%;
+}
+
+/* MEDIA QUERIES */
+
+@media  screen and (min-width: 1350px) {
+    
+    .column--right{
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: auto;
+        margin-right: auto;
+    }
+}
+
+
+@media  screen and (min-width: 1800px) {
+
+    .column--right{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* .card-skill {
+        max-width: 330px;
+    }
+    .cards--project {
+        max-width: 1350px;
+    } */
+}
