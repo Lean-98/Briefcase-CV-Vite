@@ -1,0 +1,32 @@
+{
+    "profile": {
+        "card__subtitle": "Desarrollador Front-end",
+        "card__text": "Un apasionado desarrollador Frontend de Argentina. Siempre enfocado en aprender las mejores prácticas y tecnologías. En el diseño me gusta dedicarle el tiempo necesario al más mínimo detalle para mejorar y optimizar el entorno visual del usuario. Amante del conocimiento, siempre buscando ser mejor en lo que hago."
+    },
+    "experience": {
+        "card__title-experience": "Experiencias",
+        "experience__time": "Enero 2022 - Actualmente",
+        "experience__job": "Desarrollador FullStack autónomo",
+        "experience__description": "Como desarrollador autodidacta desde mis comienzos siempre estuve aplicando lo que aprendía, haciendo proyectos que destacaran los conocimientos adquiridos, estudiando las mejores prácticas, entendiendo cómo funciona la programación y la mejor forma de emplear su uso.",
+        "experience__time-2": "Octubre 2021 - Actualmente",
+        "experience__job-2": "Desarrollador Frontend",
+        "experience__description-2": "Diseño UI/UX y maquetación web."  
+    },
+    "hobbies": {
+        "card__title-hobbies": "Pasatiempos",
+        "hobbie__title": "Bicicleta, Natación y Gym",
+        "hobbie__text": "En mi tiempo libre me gusta entrenar y andar en bicicleta. De adolescente nadé durante casi dos años, es un deporte que me encanta y me relaja."
+    },
+    "skills": {
+        "card__title-skill-3": "Herramientas de Desarrollo",
+        "card__title-skill-small": "Años de Experiencia",
+        "card__title-skill-4": "Habilidades Blandas",
+        "card-4-skills__tech-1": "Responsabilidad",
+        "card-4-skills__tech-2": "Creatividad",
+        "card-4-skills__tech-3": "Multitarea"
+    },
+    "footer": {
+        "footer__container": "Todos los derechos reservados",
+        "footer__designedBy": "Diseñado por"
+    }
+}

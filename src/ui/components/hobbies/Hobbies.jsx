@@ -1,6 +1,7 @@
 import './hobbies.css';
 import '@splidejs/react-splide/css';
 import { Splide, SplideSlide, SplideTrack  } from '@splidejs/react-splide';
+import { useTranslation } from 'react-i18next';
 import {
     Bike01, 
     Bike02,  
@@ -8,7 +9,10 @@ import {
     Gym,   
 } from './index';
 
+
+
 export default function Hobbies() {
+  const [ t, i18n ] = useTranslation("global"); 
 
   const options = {
     type         : 'loop',
@@ -21,7 +25,7 @@ export default function Hobbies() {
 
   return (
     <article className="card card--hobbies">
-      <h2 className="card__title-hobbies">Hobbies</h2>
+      <h2 className="card__title-hobbies">{t("hobbies.card__title-hobbies")}</h2>
       <div className="card__image--hobbieSplide" data-aos="zoom-in-up">
       <Splide
           options={ options }
@@ -45,8 +49,8 @@ export default function Hobbies() {
           </div>
       </Splide>
       </div>
-      <h3 className="hobbie__title">Biking, Swimming and Gym </h3>
-      <p className="hobbie__text">En mi tiempo libre me gusta entrenar y andar en bicicleta. De adolescente nadé durante casi dos años, es un deporte que me encanta y me relaja.</p>
+      <h3 className="hobbie__title">{t("hobbies.hobbie__title")}</h3>
+      <p className="hobbie__text">{t("hobbies.hobbie__text")}</p>
     </article>
   )
 }

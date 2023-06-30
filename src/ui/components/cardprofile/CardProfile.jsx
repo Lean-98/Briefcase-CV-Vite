@@ -1,16 +1,18 @@
 import './cardprofile.css';
-
 import Profile from '../../../../public/assets/images/profile-me.jpg';
+import { Experience } from '../experience/Experience';
+import  Hobbies  from '../hobbies/Hobbies';
+import { CardSkills } from '../cardskills/CardSkills';
 import { MdOutlineMail } from 'react-icons/md';
 import { BsTelegram } from 'react-icons/bs';
-import { Experience } from '../experience/Experience';
-import Hobbies from '../hobbies/Hobbies';
-import { CardSkills } from '../cardskills/CardSkills';
+import { useTranslation } from 'react-i18next';
 
 export const CardProfile = () => {
+  const [ t, i18n ] = useTranslation("global");  
+
   return (
     <>
-      <main className="main">
+      <main className="main" id='start'>
         <section className="colum colum--left">
           <article className="card card--profile">
             <div className="card__image--container">
@@ -18,13 +20,7 @@ export const CardProfile = () => {
             </div>
             <div className="card__header">
               <h2 className="card__title-profile">Leandro Alexis Piazza</h2>
-              <p
-                className="card__subtitle"
-                data-section="profile"
-                data-value="rol"
-              >
-                Front End Developer
-              </p>
+              <p className="card__subtitle" >{t("profile.card__subtitle")}</p>
             </div>
             <div className="car__body">
               <div className="card__link">
@@ -43,17 +39,7 @@ export const CardProfile = () => {
                   <BsTelegram /> Telegram
                 </a>
               </div>
-              <p
-                className="card__text"
-                data-section="profile"
-                data-value="description"
-              >
-                Busco desarrollar mi experiencia, a la vez que desarrollo mi
-                carrera profesional, para crecer en el ámbito
-                tecnológico,buscando nuevos retos y técnicas.
-                <br /> Amante del conocimiento,siempre buscando ser mejor en lo
-                que hago.
-              </p>
+              <p className="card__text">{t("profile.card__text")}</p>
             </div>
 
             {/* <div className="contenedor__qr">

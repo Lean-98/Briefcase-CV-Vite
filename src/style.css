@@ -5,10 +5,11 @@
     --text-color: hsl(0, 0%, 31%);
     --bg-color: hsl(0, 0%, 90%);
     --bg--card-color: hsl(0, 0%, 98%);
-    --dark1: #222222;
+    --footer-color-dark: #222222;
     --secondary-light: rgb(173, 173, 173);
     --border-radius: .5rem;
     --transition: color 0.1s, background-color 0.2s ease-in-out;
+    --bg-transition: all 0.3s ease-in-out;
     --skill-bar-lenght: 0%;
 }
 
@@ -36,28 +37,12 @@ body {
     font-family: sans-serif;
 }
 
-body.dark {
+[data-theme="dark"] {
     --text-color: hsl(0, 0%, 83%);
     --bg-color: hsl(0, 0%, 15%);
     --bg--card-color: hsl(0, 0%, 20%);
+    transition: var(--bg-transition);
 }
-
-
-/* .column {
-    display: grid;
-    gap: .5rem;
-} */
-
-
-@media screen and (min-width: 700px) {}
-
-
-@media screen and (min-width: 1415px) {}
-
-
-@media screen and (min-width: 1800px) {}
-
-
 
 .btn {
     display: flex;
@@ -130,22 +115,13 @@ body.dark {
     margin: 0;
 }
 
-@keyframes skills-bar-fill {
-    to {
-        transform: translateX(var(--skill-bar-lenght));
-    }
-}
 
+/* Arrow Scroll */
 
-
-/* flecha scroll */
-
-#botonArriba {
+#btn-scrollUp {
     position: fixed;
     bottom: 20px;
     right: -100px;
     width: 40px;
     transition: all 1s;
 }
-
-/* QR */

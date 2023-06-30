@@ -1,0 +1,32 @@
+{
+    "profile": {
+        "card__subtitle": "Front-end Developer",
+        "card__text": "A passionate frontend developer from Argentina. Always focused on learning best practices and technologies. In The design I like to dedicate the necessary time to the smallest detail to improve and optimize the user's visual environment. A lover of knowledge, always seeking to be better at what I do."
+    },
+    "experience": {
+        "card__title-experience": "Experiences",
+        "experience__time": "January 2022 - Currently",
+        "experience__job": "Freelance FullStack Developer",
+        "experience__description": "As a self-taught developer from my beginnings I was always applying what I learned, making projects that highlighted the knowledge acquired, studying best practices, understanding how programming works and the best way to employ its use.",
+        "experience__time-2": "October 2021 - Currently",
+        "experience__job-2": "Frontend Developer",
+        "experience__description-2": "UI/UX design and web layout."    
+    },
+    "hobbies": {
+        "card__title-hobbies": "Hobbies",
+        "hobbie__title": "Biking, Swimming and Gym",
+        "hobbie__text": "In my spare time I like to train and ride my bike. As a teenager I swam for almost two years, it is a sport that I love and relaxes me."
+    },
+    "skills": {
+        "card__title-skill-3": "Development Tools",
+        "card__title-skill-small": "Years of Experience",
+        "card__title-skill-4": "Soft Skills",
+        "card-4-skills__tech-1": "Responsibility",
+        "card-4-skills__tech-2": "Creativity",
+        "card-4-skills__tech-3": "Multitasking"
+    },
+    "footer": {
+        "footer__container": "All rights reserverd",
+        "footer__designedBy": "Designed by"
+    }
+}

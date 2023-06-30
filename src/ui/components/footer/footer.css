@@ -1,5 +1,5 @@
 footer {
-  background-color: var(--dark1);
+  background-color: var(--footer-color-dark);
   display: grid;
   text-align: center;
   font-size: clamp(1rem, 5vw, 1.2rem);

@@ -1,0 +1,35 @@
+.colors {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20px;
+    width: 100px;
+}
+
+.colors__item {
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--text-color);
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+
+.colors__item--blue {
+    --primary-color: hsl(214, 84%, 56%);
+}
+
+.colors__item--green {
+    --primary-color: hsl(150, 84%, 56%);
+}
+
+.colors__item--purple {
+    --primary-color: hsl(276, 84%, 56%);
+}
+
+.colors__item--orange {
+    --primary-color: hsl(46, 84%, 56%);
+}
+
+.colors__item--red {
+    --primary-color: hsl(5, 84%, 56%);
+}

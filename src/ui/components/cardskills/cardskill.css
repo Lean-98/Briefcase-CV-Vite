@@ -98,6 +98,12 @@
     --skill-bar-lenght: 90%;
 }
 
+@keyframes skills-bar-fill {
+    to {
+        transform: translateX(var(--skill-bar-lenght));
+    }
+}
+
 /* MEDIA QUERIES */
 
 @media  screen and (min-width: 1350px) {

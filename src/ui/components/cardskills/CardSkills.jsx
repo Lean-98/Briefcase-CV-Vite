@@ -1,14 +1,18 @@
-import { CardProjects } from '../cardprojects/CardProjects';
 import './cardskill.css'
+import { CardProjects } from '../cardprojects/CardProjects';
+import { useTranslation } from 'react-i18next';
+
 
 export const CardSkills = () => {
+  const [ t, i18n ] = useTranslation("global");
+
   return (
     <>
     <section className="column column--right">
        {/* Card 1  */}
       <article className="card-skill">
-        <h2 className="card__title-skill">Front End</h2>
-        <small>Años de Experiencia</small>
+        <h2 className="card__title-skill">FrontEnd</h2>
+        <small>{t("skills.card__title-skill-small")}</small>
         <div className="skills">
           <div className="skills__header">
             <span className="skills__start-level">0</span>
@@ -36,7 +40,7 @@ export const CardSkills = () => {
        {/* Card 2  */}
       <article className="card-skill">
         <h2 className="card__title-skill">Backend</h2>
-        <small>Años de Experiencia</small>
+        <small>{t("skills.card__title-skill-small")}</small>
         <div className="skills">
           <div className="skills__header">
             <span className="skills__start-level">0</span>
@@ -59,8 +63,8 @@ export const CardSkills = () => {
 
        {/* Card 3  */}
       <article className="card-skill">
-        <h2 className="card__title-skill">Dev Tools</h2>
-        <small>Años de Experiencia</small>
+        <h2 className="card__title-skill">{t("skills.card__title-skill-3")}</h2>
+        <small>{t("skills.card__title-skill-small")}</small>
         <div className="skills">
           <div className="skills__header">
             <span className="skills__start-level">0</span>
@@ -99,23 +103,23 @@ export const CardSkills = () => {
 
        {/* Card 4  */}
       <article className="card-skill">
-        <h2 className="card__title-skill">Skills</h2>
-        <small>Años de Experiencia</small>
+        <h2 className="card__title-skill">{t("skills.card__title-skill-4")}</h2>
+        <small>{t("skills.card__title-skill-small")}</small>
         <div className="skills">
           <div className="skills__header">
             <span className="skills__start-level">0</span>
             <span className="skills__start-level">1</span>
           </div>
           <div className="skills__item">
-            <p className="skills__tech">Responsabilidad</p>
+            <p className="skills__tech">{t("skills.card-4-skills__tech-1")}</p>
             <div className="skills__bar skills__bar--70"></div>
           </div>
           <div className="skills__item">
-            <p className="skills__tech">Creatividad</p>
+            <p className="skills__tech">{t("skills.card-4-skills__tech-2")}</p>
             <div className="skills__bar skills__bar--70"></div>
           </div>
           <div className="skills__item">
-            <p className="skills__tech">Multitarea</p>
+            <p className="skills__tech">{t("skills.card-4-skills__tech-3")}</p>
             <div className="skills__bar skills__bar--50"></div>
           </div>
         </div>
