@@ -22,6 +22,10 @@ export const Footer = () => {
 
   scrollUp();
 
+  const currentDate = new Date();
+  const currentYear = currentDate.getFullYear();
+
+
   return (
     <>
       <a href="#start">
@@ -29,7 +33,7 @@ export const Footer = () => {
       </a>
       <footer className="footer">
         <div className="container"></div>
-        <p> {t("footer.footer__container")} 2023&copy; | {t("footer.footer__designedBy")} Leeo Piazza </p>
+        <p> {t("footer.footer__container")} {currentYear}&copy; | {t("footer.footer__designedBy")} Leeo Piazza </p>
       </footer>
     </>
   );

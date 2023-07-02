@@ -1,112 +1,99 @@
-import './cardprojects.css'
+import { useState } from 'react';
+import './cardprojects.css';
+import AOS from 'aos';
 import '@splidejs/react-splide/css';
-import { Splide, SplideSlide, SplideTrack  } from '@splidejs/react-splide';
-import img1 from '../../../../public/assets/images/bienesRaices_01.png';
-import img2 from '../../../../public/assets/images/bienesRaices_02.png';
-import img3 from '../../../../public/assets/images/bienesRaices_03.png';
-import img4 from '../../../../public/assets/images/devwebcamp01.png';
-import img5 from '../../../../public/assets/images/devwebcamp02.png';
+import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
+import { projectsEn, projectsEs, projectsPt } from './projects.js';
+import { useTranslation } from 'react-i18next';
 
+AOS.init();
 
 export const CardProjects = () => {
+  const [t, i18n] = useTranslation("global");
+  const [currentPage, setCurrentPage] = useState(0);
 
-    const options = {
-        type         : 'loop',
-        gap          : '1rem',
-        autoplay     : true,
-        interval: '4000',
-        pauseOnHover : false,
-        resetProgress: false,
-      };    
+  const options = {
+    type: "loop",
+    gap: "1rem",
+    autoplay: true,
+    interval: "4000",
+    pauseOnHover: false,
+    resetProgress: false,
+  };
+
+
+  const filteredProjects = () => {
+    if (i18n.language === "en")
+      return projectsEn.slice(currentPage, currentPage + 4);
+    if (i18n.language === "pt")
+      return projectsPt.slice(currentPage, currentPage + 4);
+    return projectsEs.slice(currentPage, currentPage + 4);
+  };
+
+  const nextPage = () => {
+    if (
+      projectsEn.length > currentPage + 4 ||
+      projectsEs.length > currentPage + 4 ||
+      projectsPt.length > currentPage + 4
+    )
+      setCurrentPage(currentPage + 4);
+  };
+
+  const PrevPage = () => {
+    if (currentPage > 0) setCurrentPage(currentPage - 4);
+  };
 
   return (
     <>
-       <article className="cards cards--project">
-        <div className="project__image--container" data-aos="flip-right">
-        <Splide
-            options={ options }
-            aria-labelledby="projects__autoplayimages"
-            hasTrack={ false } >
-                <div style={ { position: 'relative' } }>
-                    <SplideTrack>
+  
+          {filteredProjects().map(({ id, image, title, description, techstack, github, demo }) => {
+            return (
+              <article key={id} className="cards cards--project">
+                <div className="project__image--container" data-aos="flip-right">
+                  <Splide
+                    options={options}
+                    aria-labelledby="portfolio__autoplayimages"
+                    hasTrack={false}
+                  >
+                    <div style={{ position: "relative" }}>
+                      <SplideTrack>
                         <SplideSlide>
-                            <img src={ img1 } alt='' />
+                          <img src={image[0]} alt={title} />
                         </SplideSlide>
                         <SplideSlide>
-                            <img src={ img2 } alt='' />
+                          <img src={image[1]} alt={title} />
                         </SplideSlide>
-                        <SplideSlide>
-                            <img src={ img3 } alt='' />
-                        </SplideSlide>
-                    </SplideTrack>
+                      </SplideTrack>
+                    </div>
+                  </Splide>
                 </div>
-            </Splide>
-        </div>
-        <div className="project">
-          <div className="project__tags">
-            <span className="project__tag">#HTML</span>
-            <span className="project__tag">#CSS</span>
-            <span className="project__tag">#Sass</span>
-            <span className="project__tag">#Gulp</span>
-            <span className="project__tag">#JavaScript</span>
-            <span className="project__tag">#PHP</span>
-            <span className="project__tag">#MySQL</span>
-            <span className="project__tag">#Responsive</span>
-          </div>
-          <h2 className="project__title">Bienes Raices</h2>
-          <p className="project__text">Sitio Web para Inmobiliaria con gestión y administración privada (login) para manejo de propiedades, vendedores, blogs y testimoniales de forma dinamica-CRUD + sección de contacto con formulario + Responsive + Menu de hamburguesa.  
-          <br/>Construida con POO con PHP usando estructura MVC y Base de Datos MySQL (crud, normalización, cardinalidad,relación de tablas,joins,etc).
-          <br/> Front-end: HTML CSS Sass Gulp Javascript. Dev Tools and testing: TablePlus, PostMan, Cypress.</p>
-          <div className="buttons">
-            <a href="https://warm-earth-28522.herokuapp.com" target="_blank" rel='noreferrer' className="btn btn--primary"><span>Sitio Web</span>
-            </a>
-            <a href="https://github.com/Lean-98/Bienes_Raices-MVC" target="_blank" rel='noreferrer' className="btn btn--ghost"><span>Code</span>
-            </a>
-          </div>
-        </div>
-      </article>  
 
-       <article className="cards cards--project">
-        <div className="project__image--container" data-aos="flip-right">
-        <Splide
-            options={ options }
-            aria-labelledby="projects__autoplayimages"
-            hasTrack={ false } >
-                <div style={ { position: 'relative' } }>
-                    <SplideTrack>
-                        <SplideSlide>
-                            <img src={ img4 } alt='' />
-                        </SplideSlide>
-                        <SplideSlide>
-                            <img src={ img5 } alt='' />
-                        </SplideSlide>
-                    </SplideTrack>
+                <div className="project">
+                      <div className="project__tags">
+                      { techstack.map((stack) => (<span className="project__tag">{stack}</span>)) }
+                      </div>
+
+                      <h2 className="project__title">{title}</h2>
+                      <p className="project__text">{description}</p>
+
+                      <div className="buttons">
+                        <a href={demo} target="_blank" rel='noreferrer' className="btn btn--primary"><span>{t("projects.project__Live")}</span></a>
+                        <a href={github} target="_blank" rel='noreferrer' className="btn btn--ghost"><span>Github</span></a>
+                      </div>
                 </div>
-            </Splide>
+              </article>
+            );
+          })}
+
+        <div className="pagination">
+          <button onClick={PrevPage} className="btn-pagination">
+            {t("projects.project__paginationPrev")}
+          </button>
+          <button onClick={nextPage} className="btn-pagination">
+            {t("projects.project__paginationNext")}
+          </button>
         </div>
-        <div className="project">
-          <div className="project__tags">
-            <span className="project__tag">#HTML</span>
-            <span className="project__tag">#CSS</span>
-            <span className="project__tag">#Sass</span>
-            <span className="project__tag">#Gulp</span>
-            <span className="project__tag">#JavaScript</span>
-            <span className="project__tag">#PHP</span>
-            <span className="project__tag">#MySQL</span>
-            <span className="project__tag">#Responsive</span>
-          </div>
-          <h2 className="project__title">Bienes Raices</h2>
-          <p className="project__text">Sitio Web para Inmobiliaria con gestión y administración privada (login) para manejo de propiedades, vendedores, blogs y testimoniales de forma dinamica-CRUD + sección de contacto con formulario + Responsive + Menu de hamburguesa.  
-          <br/>Construida con POO con PHP usando estructura MVC y Base de Datos MySQL (crud, normalización, cardinalidad,relación de tablas,joins,etc).
-          <br/> Front-end: HTML CSS Sass Gulp Javascript. Dev Tools and testing: TablePlus, PostMan, Cypress.</p>
-          <div className="buttons">
-            <a href="https://warm-earth-28522.herokuapp.com" target="_blank" rel='noreferrer' className="btn btn--primary"><span>Sitio Web</span>
-            </a>
-            <a href="https://github.com/Lean-98/Bienes_Raices-MVC" target="_blank" rel='noreferrer' className="btn btn--ghost"><span>Code</span>
-            </a>
-          </div>
-        </div>
-      </article>  
+
     </>
-  )
-}
+  );
+};

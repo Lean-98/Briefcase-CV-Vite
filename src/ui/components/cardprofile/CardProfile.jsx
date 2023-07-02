@@ -1,11 +1,13 @@
 import './cardprofile.css';
-import Profile from '../../../../public/assets/images/profile-me.jpg';
+import Profile from '../../../../public/assets/images/developer.jpg';
 import { Experience } from '../experience/Experience';
 import  Hobbies  from '../hobbies/Hobbies';
 import { CardSkills } from '../cardskills/CardSkills';
 import { MdOutlineMail } from 'react-icons/md';
 import { BsTelegram } from 'react-icons/bs';
 import { useTranslation } from 'react-i18next';
+import { GeneratorQR } from './GeneratorQR';
+
 
 export const CardProfile = () => {
   const [ t, i18n ] = useTranslation("global");  
@@ -42,10 +44,8 @@ export const CardProfile = () => {
               <p className="card__text">{t("profile.card__text")}</p>
             </div>
 
-            {/* <div className="contenedor__qr">
-                    <div id="contenedorQR" className="contenedorQR" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
-                    </div>
-                </div> */}
+            <GeneratorQR/>
+            
           </article>
           <Experience />
           <Hobbies />

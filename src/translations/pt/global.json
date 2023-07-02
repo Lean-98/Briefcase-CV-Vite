@@ -21,9 +21,19 @@
         "card__title-skill-3": "Ferramentas de Desenvolvimento",
         "card__title-skill-small": "Anos de experiência",
         "card__title-skill-4": "Habilidades Interpessoais",
-        "card-4-skills__tech-1": "Responsabilidade",
-        "card-4-skills__tech-2": "Criatividade",
-        "card-4-skills__tech-3": "Multitarefa"
+        "card-4-skills__tech-1": "Aprendizado rápido",
+        "card-4-skills__tech-2": "Autoconhecimento",
+        "card-4-skills__tech-3": "Criatividade",
+        "card-4-skills__tech-4": "Gerenciamento de tempo",
+        "card-4-skills__tech-5": "Multitarefa",
+        "card-4-skills__tech-6": "Pensamento analítico",
+        "card-4-skills__tech-7": "Perseverança",
+        "card-4-skills__tech-8": "Responsabilidade"
+    },
+    "projects": {
+        "project__Live": "Website",
+        "project__paginationPrev": "Anterior",
+        "project__paginationNext": "Próximo"
     },
     "footer": {
         "footer__container": "Todos os direitos reservados",

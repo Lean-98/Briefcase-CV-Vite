@@ -1,4 +1,5 @@
 import './hobbies.css';
+import AOS from 'aos';
 import '@splidejs/react-splide/css';
 import { Splide, SplideSlide, SplideTrack  } from '@splidejs/react-splide';
 import { useTranslation } from 'react-i18next';
@@ -9,6 +10,7 @@ import {
     Gym,   
 } from './index';
 
+AOS.init();
 
 
 export default function Hobbies() {

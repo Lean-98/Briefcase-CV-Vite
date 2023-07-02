@@ -1,5 +1,5 @@
 import './experience.css';
-import  Logo  from '../../../../public/assets/images/logo.png';
+import  Logo  from '../../../../public/assets/images/github.png';
 import { useTranslation } from 'react-i18next';
 
 

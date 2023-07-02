@@ -106,7 +106,7 @@
 
 /* MEDIA QUERIES */
 
-@media  screen and (min-width: 1350px) {
+@media  screen and (min-width: 1195px) {
     
     .column--right{
         grid-template-columns: repeat(2, 1fr);
@@ -115,8 +115,17 @@
     }
 }
 
+@media  screen and (min-width: 1440px) {
+    
+    .column--right{
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: auto;
+        margin-right: auto;
+    }
+}
 
-@media  screen and (min-width: 1800px) {
+
+@media  screen and (min-width: 1700px) {
 
     .column--right{
         grid-template-columns: repeat(4, 1fr);

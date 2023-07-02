@@ -21,9 +21,19 @@
         "card__title-skill-3": "Development Tools",
         "card__title-skill-small": "Years of Experience",
         "card__title-skill-4": "Soft Skills",
-        "card-4-skills__tech-1": "Responsibility",
+        "card-4-skills__tech-1": "Analytical thinking",
         "card-4-skills__tech-2": "Creativity",
-        "card-4-skills__tech-3": "Multitasking"
+        "card-4-skills__tech-3": "Multitasking",
+        "card-4-skills__tech-4": "Perseverance",
+        "card-4-skills__tech-5": "Rapid learning",
+        "card-4-skills__tech-6": "Responsibility",
+        "card-4-skills__tech-7": "Self awareness",
+        "card-4-skills__tech-8": "Time management"
+    },
+    "projects": {
+        "project__Live": "Live",
+        "project__paginationPrev": "Previous",
+        "project__paginationNext": "Next"
     },
     "footer": {
         "footer__container": "All rights reserverd",

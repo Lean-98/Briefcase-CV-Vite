@@ -16,23 +16,43 @@ export const CardSkills = () => {
         <div className="skills">
           <div className="skills__header">
             <span className="skills__start-level">0</span>
-            <span className="skills__start-level">1</span>
+            <span className="skills__start-level">2</span>
           </div>
           <div className="skills__item">
             <p className="skills__tech">HTML</p>
-            <div className="skills__bar skills__bar--70"></div>
+            <div className="skills__bar skills__bar--90"></div>
           </div>
           <div className="skills__item">
             <p className="skills__tech">CSS</p>
+            <div className="skills__bar skills__bar--80"></div>
+          </div>
+          <div className="skills__item">
+            <p className="skills__tech">SASS</p>
+            <div className="skills__bar skills__bar--70"></div>
+          </div>
+          <div className="skills__item">
+            <p className="skills__tech">Material UI</p>
+            <div className="skills__bar skills__bar--30"></div>
+          </div>
+          <div className="skills__item">
+            <p className="skills__tech">Bootstrap</p>
             <div className="skills__bar skills__bar--50"></div>
           </div>
           <div className="skills__item">
             <p className="skills__tech">JavaScript</p>
+            <div className="skills__bar skills__bar--90"></div>
+          </div>
+          <div className="skills__item">
+            <p className="skills__tech">TypeScript</p>
+            <div className="skills__bar skills__bar--40"></div>
+          </div>
+          <div className="skills__item">
+            <p className="skills__tech">React</p>
             <div className="skills__bar skills__bar--60"></div>
           </div>
           <div className="skills__item">
-            <p className="skills__tech">React.js</p>
-            <div className="skills__bar skills__bar--10"></div>
+            <p className="skills__tech">Redux</p>
+            <div className="skills__bar skills__bar--50"></div>
           </div>
         </div>
       </article>
@@ -44,7 +64,7 @@ export const CardSkills = () => {
         <div className="skills">
           <div className="skills__header">
             <span className="skills__start-level">0</span>
-            <span className="skills__start-level">1</span>
+            <span className="skills__start-level">2</span>
           </div>
           <div className="skills__item">
             <p className="skills__tech">PHP</p>
@@ -58,6 +78,14 @@ export const CardSkills = () => {
             <p className="skills__tech">MongoDB</p>
             <div className="skills__bar skills__bar--30"></div>
           </div>
+          <div className="skills__item">
+            <p className="skills__tech">Firebase</p>
+            <div className="skills__bar skills__bar--30"></div>
+          </div>
+          <div className="skills__item">
+            <p className="skills__tech">Node.js</p>
+            <div className="skills__bar skills__bar--10"></div>
+          </div>
         </div>
       </article>
 
@@ -68,31 +96,43 @@ export const CardSkills = () => {
         <div className="skills">
           <div className="skills__header">
             <span className="skills__start-level">0</span>
-            <span className="skills__start-level">1</span>
+            <span className="skills__start-level">2</span>
           </div>
           <div className="skills__item">
-            <p className="skills__tech">Github</p>
-            <div className="skills__bar skills__bar--50"></div>
+            <p className="skills__tech">Git</p>
+            <div className="skills__bar skills__bar--80"></div>
           </div>
           <div className="skills__item">
-            <p className="skills__tech">Visual Studio</p>
+            <p className="skills__tech">GitHub</p>
+            <div className="skills__bar skills__bar--80"></div>
+          </div>
+          <div className="skills__item">
+            <p className="skills__tech">NPM</p>
+            <div className="skills__bar skills__bar--80"></div>
+          </div>
+          <div className="skills__item">
+            <p className="skills__tech">Yarn</p>
+            <div className="skills__bar skills__bar--60"></div>
+          </div>
+          <div className="skills__item">
+            <p className="skills__tech">Webpack</p>
             <div className="skills__bar skills__bar--70"></div>
           </div>
           <div className="skills__item">
-            <p className="skills__tech">Sass</p>
+            <p className="skills__tech">Vite</p>
             <div className="skills__bar skills__bar--60"></div>
+          </div>
+          <div className="skills__item">
+            <p className="skills__tech">Composer</p>
+            <div className="skills__bar skills__bar--40"></div>
           </div>
           <div className="skills__item">
             <p className="skills__tech">Gulp</p>
             <div className="skills__bar skills__bar--40"></div>
           </div>
           <div className="skills__item">
-            <p className="skills__tech">NPM</p>
-            <div className="skills__bar skills__bar--40"></div>
-          </div>
-          <div className="skills__item">
-            <p className="skills__tech">Webpack</p>
-            <div className="skills__bar skills__bar--40"></div>
+            <p className="skills__tech">Jest</p>
+            <div className="skills__bar skills__bar--60"></div>
           </div>
           <div className="skills__item">
             <p className="skills__tech">Cypress</p>
@@ -108,7 +148,7 @@ export const CardSkills = () => {
         <div className="skills">
           <div className="skills__header">
             <span className="skills__start-level">0</span>
-            <span className="skills__start-level">1</span>
+            <span className="skills__start-level">2</span>
           </div>
           <div className="skills__item">
             <p className="skills__tech">{t("skills.card-4-skills__tech-1")}</p>
@@ -116,11 +156,31 @@ export const CardSkills = () => {
           </div>
           <div className="skills__item">
             <p className="skills__tech">{t("skills.card-4-skills__tech-2")}</p>
-            <div className="skills__bar skills__bar--70"></div>
+            <div className="skills__bar skills__bar--80"></div>
           </div>
           <div className="skills__item">
             <p className="skills__tech">{t("skills.card-4-skills__tech-3")}</p>
-            <div className="skills__bar skills__bar--50"></div>
+            <div className="skills__bar skills__bar--60"></div>
+          </div>
+          <div className="skills__item">
+            <p className="skills__tech">{t("skills.card-4-skills__tech-4")}</p>
+            <div className="skills__bar skills__bar--60"></div>
+          </div>
+          <div className="skills__item">
+            <p className="skills__tech">{t("skills.card-4-skills__tech-5")}</p>
+            <div className="skills__bar skills__bar--60"></div>
+          </div>
+          <div className="skills__item">
+            <p className="skills__tech">{t("skills.card-4-skills__tech-6")}</p>
+            <div className="skills__bar skills__bar--60"></div>
+          </div>
+          <div className="skills__item">
+            <p className="skills__tech">{t("skills.card-4-skills__tech-7")}</p>
+            <div className="skills__bar skills__bar--60"></div>
+          </div>
+          <div className="skills__item">
+            <p className="skills__tech">{t("skills.card-4-skills__tech-8")}</p>
+            <div className="skills__bar skills__bar--60"></div>
           </div>
         </div>
       </article>   
