@@ -17,12 +17,13 @@ export default function Hobbies() {
   const [ t, i18n ] = useTranslation("global"); 
 
   const options = {
-    type         : 'loop',
-    gap          : '1rem',
-    autoplay     : true,
-    interval: '4000',
-    pauseOnHover : false,
-    resetProgress: false,
+    type: 'loop',
+    autoHeight: true,
+    arrows: false,
+    pagination: true,
+    autoplay: true,
+    interval: '5000',
+    pauseOnHover: true,
   };
 
   return (

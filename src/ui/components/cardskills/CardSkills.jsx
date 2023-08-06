@@ -68,15 +68,15 @@ export const CardSkills = () => {
           </div>
           <div className="skills__item">
             <p className="skills__tech">PHP</p>
-            <div className="skills__bar skills__bar--50"></div>
-          </div>
-          <div className="skills__item">
-            <p className="skills__tech">MySQL</p>
             <div className="skills__bar skills__bar--60"></div>
           </div>
           <div className="skills__item">
+            <p className="skills__tech">MySQL</p>
+            <div className="skills__bar skills__bar--70"></div>
+          </div>
+          <div className="skills__item">
             <p className="skills__tech">MongoDB</p>
-            <div className="skills__bar skills__bar--30"></div>
+            <div className="skills__bar skills__bar--50"></div>
           </div>
           <div className="skills__item">
             <p className="skills__tech">Firebase</p>
@@ -84,7 +84,11 @@ export const CardSkills = () => {
           </div>
           <div className="skills__item">
             <p className="skills__tech">Node.js</p>
-            <div className="skills__bar skills__bar--10"></div>
+            <div className="skills__bar skills__bar--30"></div>
+          </div>
+          <div className="skills__item">
+            <p className="skills__tech">Express.js</p>
+            <div className="skills__bar skills__bar--30"></div>
           </div>
         </div>
       </article>

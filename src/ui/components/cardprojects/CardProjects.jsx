@@ -13,12 +13,13 @@ export const CardProjects = () => {
   const [currentPage, setCurrentPage] = useState(0);
 
   const options = {
-    type: "loop",
-    gap: "1rem",
+    type: 'loop',
+    autoHeight: true,
+    arrows: false,
+    pagination: true,
     autoplay: true,
-    interval: "4000",
-    pauseOnHover: false,
-    resetProgress: false,
+    interval: '5000',
+    pauseOnHover: true,
   };
 
 

@@ -6,6 +6,8 @@ import blackJack01 from '../../../../public/assets/images/blackjack_01.png';
 import blackJack02 from '../../../../public/assets/images/blackjack_02.png';
 import blogCoffe01 from '../../../../public/assets/images/blog-coffe-01.png';
 import blogCoffe02 from '../../../../public/assets/images/blog-coffe-02.png';
+import calendarapp01 from '../../../../public/assets/images/calendar-App-01.png';
+import calendarapp02 from '../../../../public/assets/images/calendar-App-02.png';
 import devfolioArg01 from '../../../../public/assets/images/devfolio-arg4.0_01.png';
 import devfolioArg02 from '../../../../public/assets/images/devfolio-arg4.0_02.png';
 import devwebCamp01 from '../../../../public/assets/images/devwebcamp01.png';
@@ -43,7 +45,9 @@ export {
      blackJack01, 
      blackJack02,
      blogCoffe01, 
-     blogCoffe02,  
+     blogCoffe02, 
+     calendarapp01,
+     calendarapp02, 
      devfolioArg01, 
      devfolioArg02,
      devwebCamp01, 
