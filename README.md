@@ -21,3 +21,7 @@ yarn build
 ## LIVE
 - Netlify -> [
 PortfolioCV-V2.0](https://portfoliocv-leandropiazza.netlify.app/)
+
+## Authors
+
+- [@LeandroPiazza](https://www.github.com/Lean-98)
